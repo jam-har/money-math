@@ -8,13 +8,14 @@ public class moneyMath {
         float flo = 0.0f;
         double doub = 0.0;
 
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < 10; i++) {
             deci = deci.add(new BigDecimal("0.10"));
             flo += 0.10f;
             doub += 0.10;
+            System.out.println("BigDecimal: " + deci + " Float: " + flo + " Double: " + doub);
 
         }
-        System.out.println("BigDecimal: " + deci + " Float: " + flo + " Double: " + doub);
+
 
         deci = BigDecimal.ZERO;
         flo = 0.0f;
